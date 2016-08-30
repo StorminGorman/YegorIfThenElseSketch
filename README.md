@@ -18,7 +18,7 @@ class DyTalk implements Talk {
 }
 ```
 
-The example is in Swift so here's a couple of reminders for Java programmers:
+[The example](https://github.com/StorminGorman/YegorIfThenElseSketch/blob/master/Talk.swift) is in Swift so here's a couple of reminders for Java programmers:
 
 - Protocols are essentially analogous to Interfaces
 - Contructors are init()
