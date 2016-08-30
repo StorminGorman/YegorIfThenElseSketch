@@ -1,13 +1,12 @@
 protocol Collection {
     func values() -> [AnyObject]
+    func add(obj: AnyObject) -> NotEmptyCollection
 }
 
 protocol EmptyCollection : Collection {
-    func add(obj: AnyObject) -> NotEmptyCollection
 }
 
 protocol NotEmptyCollection : Collection {
-    func add(obj: AnyObject) -> NotEmptyCollection
 }
 
 class DefaultEmptyCollection : EmptyCollection {
