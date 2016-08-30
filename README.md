@@ -9,6 +9,7 @@ The example is in Swift so here's a couple of reminders for Java programmers:
 
 - Protocols are essentially analogous to Interfaces
 - Contructors are init()
+- Parameters are given as "variableName: Type"
 - Array types are [ObjectType]
 
 I think everything else is pretty self explanatory
