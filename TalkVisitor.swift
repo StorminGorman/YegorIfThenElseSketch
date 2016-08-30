@@ -32,7 +32,7 @@ class DefaultCollection : Collection {
         talk.modify(self)
     }
     
-    func add(obj: AnyObject) -> NotEmptyCollection {
+    func add(obj: AnyObject) -> Collection {
         var newValues = [AnyObject]()
         newValues.appendContentsOf(_values)
         newValues.append(obj)
