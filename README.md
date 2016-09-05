@@ -27,3 +27,14 @@ The examples are in Swift so here's a couple of reminders for Java programmers:
 - Array types are [ObjectType]
 
 I think everything else is pretty self explanatory
+
+Example usage of Vistor code that does not have an if statement:
+```
+var dirs: Collection = EmptyCollection()
+
+func add(dir: Dir) {
+	        dirs = dirs.add(dir)
+}
+
+dirs.letsHaveA(talk: DyTalk())
+```
