@@ -3,9 +3,8 @@ var dirs: Collection = EmptyCollection()
 
 func add(dir: Dir) {
 	dirs = dirs.add(dir)
+	dirs.letsHaveA(talk: DyTalk())
 }
-
-dirs.letsHaveA(talk: DyTalk())
 
 
 protocol Collection {

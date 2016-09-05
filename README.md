@@ -33,8 +33,8 @@ Example usage of Vistor code that does not have an if statement:
 var dirs: Collection = EmptyCollection()
 
 func add(dir: Dir) {
-	        dirs = dirs.add(dir)
+	dirs = dirs.add(dir)
+	dirs.letsHaveA(talk: DyTalk())
 }
 
-dirs.letsHaveA(talk: DyTalk())
 ```
