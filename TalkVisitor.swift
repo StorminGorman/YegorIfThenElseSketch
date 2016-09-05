@@ -1,3 +1,13 @@
+
+var dirs: Collection = EmptyCollection()
+
+func add(dir: Dir) {
+	dirs = dirs.add(dir)
+}
+
+dirs.letsHaveA(talk: DyTalk())
+
+
 protocol Collection {
     func letsHaveA(talk: Talk) -> Void
     func values() -> [AnyObject]
