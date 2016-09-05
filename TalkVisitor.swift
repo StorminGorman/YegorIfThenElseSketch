@@ -1,11 +1,18 @@
 
-var dirs: Collection = EmptyCollection()
+class ExampleUsage {
+	var dirs: Collection
+	init() {
+		dirs = EmptyCollection()
+	}
 
-func add(dir: Dir) {
-	dirs = dirs.add(dir)
-	dirs.letsHaveA(talk: DyTalk())
+	func add(dir: Dir) {
+		dirs.add(dir)
+	}
+	
+	func talk() {
+		dirs.letsHaveATalk(DyTalk())
+	}
 }
-
 
 protocol Collection {
     func letsHaveA(talk: Talk) -> Void

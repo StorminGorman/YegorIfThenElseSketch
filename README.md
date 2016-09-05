@@ -30,11 +30,18 @@ I think everything else is pretty self explanatory
 
 Example usage of Vistor code that does not have an if statement:
 ```
-var dirs: Collection = EmptyCollection()
+class ExampleUsage {
+	var dirs: Collection
+	init() {
+		dirs = EmptyCollection()
+	}
 
-func add(dir: Dir) {
-	dirs = dirs.add(dir)
-	dirs.letsHaveA(talk: DyTalk())
+	func add(dir: Dir) {
+		dirs.add(dir)
+	}
+
+	func talk() {
+		dirs.letsHaveATalk(DyTalk())
+	}
 }
-
 ```
