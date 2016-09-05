@@ -37,7 +37,7 @@ class ExampleUsage {
 	}
 
 	func add(dir: Dir) {
-		dirs.add(dir)
+		self.dirs = dirs.add(dir)
 	}
 
 	func talk() {
